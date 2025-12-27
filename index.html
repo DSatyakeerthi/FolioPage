@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<meta UTF-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+       body {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .section-1 {
+        background-color: rgb(250, 248, 248);
+        padding-bottom: 30px;
+        border-radius: 5px;
+    }
+    .navigation-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .nav-icons {
+        color: black;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .my-photo {
+        display: flex;
+        
+    }
+
+    .my-photo button:hover {
+        cursor: pointer;
+    }
+    .photo {
+        height: 200px;
+        width: 150px;
+        object-position: center;
+        border-radius: 8px;
+        margin-left: 80px;
+    }
+
+    .personal-info {
+        margin-left: 50px;
+
+    }
+
+    .button-sections {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: orange;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    .button-second {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(125, 125, 235);
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    .bio-section {
+        background-color: rgb(226, 240, 240);
+        margin-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .bio {
+        padding-left: 40px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .second-section {
+        display: flex;   
+    }
+
+    .second-image {
+        width: 150px;
+        height: 150px;
+        padding: 40px 50px 20px 100px;
+        object-position: center;
+    }
+    @media (max-width:1440px){
+        body{
+            display:block;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <section class="section-1">
+    <div class="navigation-icons">
+        <h4>John Smith</h4>
+    <nav>
+        <a class="nav-icons" href="instagram">Instagram</a>
+        <a class="nav-icons" href="linkedin">LinkedIn</a>
+        <a class="nav-icons" href="mywork">My Work</a>
+        <a class="nav-icons" href="contact">Contact</a>
+    </nav>
+    </div>
+
+    <div class="my-photo">
+        <img  class=" photo" src="icons/laptop.jpg">
+    <div class="personal-info">
+        <h2>Hey Friends!</h2>
+        <p>I'm John. I'm a<strong>Photographer</strong> and <strong>Instagram Creator</strong><br>
+        with a passion for capturing moments that tell <br>
+        magical stories.
+        </p>
+        
+        <button class="button-sections">Follow Me on Instagram</button>
+        <button class="button-second">See My Work</button>
+        
+        
+    </div>
+         
+    </div>
+    
+    </section>
+
+    <section class="bio-section">
+        <div class="second-section">
+        <div class="bio">
+        <h2>How I can help you</h2>
+        <p>Lerem ipsum dolor sit amet, consectetur adipisicing<br>
+        elit. At error not impedit vitae ab explicabo<br>
+        assumenda dolore dolor aliquid totam nostrum libero <br>
+        repellat architecto, et inventore facilis quibusdam <br>
+        illum vero natus nihin! Sunt aout minima dignissimos<br>
+        incidunt, nostrum eum eligendi!</p>
+        </div>
+
+        <img class="second-image" src="icons/laptop.jpg">
+
+        
+        
+        </div>
+       
+      
+    </section>
+
+
+</body>
+</html>
