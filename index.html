@@ -6,21 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
        body {
-        margin-left: 350px;
-        margin-right: 350px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .foliopage{
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
     }
     .section-1 {
         background-color: rgb(250, 248, 248);
         padding-bottom: 30px;
         border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
     }
     .navigation-icons {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
-        border-radius: 8px;
-        padding-left: 50px;
-        padding-right: 50px;
     }
 
     .nav-icons {
@@ -31,6 +36,9 @@
 
     .my-photo {
         display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
         
     }
 
@@ -38,11 +46,11 @@
         cursor: pointer;
     }
     .photo {
-        height: 200px;
-        width: 150px;
-        object-position: center;
-        border-radius: 8px;
-        margin-left: 80px;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 6px;
+        
     }
 
     .personal-info {
@@ -85,25 +93,60 @@
         text-align: center;
     }
     .second-section {
-        display: flex;   
+        display: flex;  
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap; 
     }
 
     .second-image {
-        width: 150px;
-        height: 150px;
-        padding: 40px 50px 20px 100px;
-        object-position: center;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-left: 70px;
+        margin-top: 30px;
     }
-    @media (max-width:400px) and (max-width: 1440px) {
-        section-1 {
-            display:block;
-        }
-    }
+
+    @media (max-width: 768px) {
+  .my-photo,
+  .second-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .personal-info {
+    margin-left: 0;
+  }
+
+  .navigation-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .button-sections,
+  .button-second {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
 </style>
 </head>
-<body>
 
-    <section class="section-1">
+<body>
+    <div class="foliopage">
+        <section class="section-1">
     <div class="navigation-icons">
         <h4>John Smith</h4>
     <nav>
@@ -153,8 +196,9 @@
        
       
     </section>
+    </div>
+    
 
 
 </body>
-
 </html>
